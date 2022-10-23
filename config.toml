@@ -1,0 +1,128 @@
+baseURL = 'https://khoulouds.github.io'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'LoveIt'
+
+[author]
+  name = "xxxx"
+  email = ""
+  link = "kkkkkk"
+
+
+[menu]
+  [[menu.main]]
+    weight = 1
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+  [[menu.main]]
+    weight = 2
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+  [[menu.main]]
+    weight = 3
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+
+[mediaTypes]
+  [mediaTypes."text/plain"]
+    suffixes = ["md"]
+
+# Options to make output .md files
+[outputFormats.MarkDown]
+  mediaType = "text/plain"
+  isPlainText = true
+  isHTML = false
+
+# Options to make hugo output files
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+  page = ["HTML", "MarkDown"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML", "RSS"]
+  taxonomyTerm = ["HTML"]
+
+
+  [params.footer]
+    enable = true
+    # Custom content (HTML format is supported)
+    custom = "Ahmed MKADEM"
+    # whether to show Hugo and theme info
+    hugo = false
+    # whether to show copyright info
+    copyright = true
+    # whether to show the author
+    author = true
+    # site creation time
+    since = 2022
+    # ICP info only in China (HTML format is supported)
+    icp = ""
+    # license info (HTML format is supported)
+    license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+
+    [params.search]
+    enable = true
+    # type of search engine ["lunr", "algolia"]
+    type = "algolia"
+    # max index length of the chunked content
+    contentLength = 4000
+    # placeholder of the search bar
+    placeholder = ""
+    # max number of results length
+    maxResultLength = 10
+    # snippet length of the result
+    snippetLength = 30
+    # HTML tag name of the highlight part in results
+    highlightTag = "em"
+    # whether to use the absolute URL based on the baseURL in search index
+    absoluteURL = false
+    [params.search.algolia]
+      index = ""
+      appID = "46EFAQRJLX"
+      searchKey = "fb5b8f112e67ae02bfa7c23d82f3464d"
+
+
+
+# Analytics config
+  [params.analytics]
+    enable = false
+    # Google Analytics
+    [params.analytics.google]
+      id = ""
+      # whether to anonymize IP
+      anonymizeIP = true
+    # Fathom Analytics
+    [params.analytics.fathom]
+      id = ""
+      # server url for your tracker if you're self hosting
+      server = ""
+    # Plausible Analytics
+    [params.analytics.plausible]
+      dataDomain = ""
+    # Yandex Metrica
+    [params.analytics.yandexMetrica]
+      id = ""
+
+  # Cookie consent config
+  [params.cookieconsent]
+    enable = false
+    # text strings used for Cookie consent banner
+    [params.cookieconsent.content]
+      message = ""
+      dismiss = ""
+      link = ""
