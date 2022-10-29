@@ -1,12 +1,12 @@
 baseURL = 'https://khoulouds.github.io/cyber-blog'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'MalBlog'
 theme = 'LoveIt'
 
 [author]
-  name = "xxxx"
+  name = "amka"
   email = ""
-  link = "kkkkkk"
+  link = ""
 
 
 [menu]
@@ -57,10 +57,59 @@ theme = 'LoveIt'
   taxonomyTerm = ["HTML"]
 
 
+  # Home page config
+  [params.home]
+    # amount of RSS pages
+    rss = 10
+    # Home page profile
+    [params.home.profile]
+      enable = true
+      # Gravatar Email for preferred avatar in home page
+      gravatarEmail = ""
+      # URL of avatar shown in home page
+      avatarURL = ""
+      # title shown in home page (HTML format is supported)
+      title = ""
+      # subtitle shown in home page (HTML format is supported)
+      subtitle = "Malblog"
+      # whether to use typeit animation for subtitle
+      typeit = true
+      # whether to show social links
+      social = true
+      # disclaimer (HTML format is supported)
+      disclaimer = ""
+    # Home page posts
+    [params.home.posts]
+      enable = true
+      # special amount of posts in each home posts page
+      paginate = 6
+
+
+
+  # Header config
+  [params.header]
+    # desktop header mode ["fixed", "normal", "auto"]
+    desktopMode = "fixed"
+    # mobile header mode ["fixed", "normal", "auto"]
+    mobileMode = "auto"
+    # Header title config
+    [params.header.title]
+      # URL of the LOGO
+      # LOGO 的 URL
+      logo = ""
+      # title name
+      name = "Malblog"
+      # you can add extra information before the name (HTML format is supported), such as icons
+      pre = ""
+      # you can add extra information after the name (HTML format is supported), such as icons
+      post = ""
+      # whether to use typeit animation for title name
+      typeit = false
+
   [params.footer]
     enable = true
     # Custom content (HTML format is supported)
-    custom = "Ahmed MKADEM"
+    custom = "Amka"
     # whether to show Hugo and theme info
     hugo = false
     # whether to show copyright info
@@ -72,7 +121,7 @@ theme = 'LoveIt'
     # ICP info only in China (HTML format is supported)
     icp = ""
     # license info (HTML format is supported)
-    license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+    #license= '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
 
 
     [params.search]
