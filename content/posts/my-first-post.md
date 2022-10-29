@@ -1,7 +1,6 @@
 ---
 title: "My First Post"
 date: 2022-10-21T00:23:02+02:00
-draft: true
 tags: ['Peframe' , 'PeStudio', 'Ahmed']
 
 
