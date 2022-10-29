@@ -1,4 +1,4 @@
-baseURL = 'https://khoulouds.github.io'
+baseURL = 'https://khoulouds.github.io/cyber-blog'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 theme = 'LoveIt'
